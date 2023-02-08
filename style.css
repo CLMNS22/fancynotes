@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.headerIcon {
+    margin-right: 20px;
+    font-size: 48px !important;
+    color: #808080;
+    cursor: pointer;
+}
+
+.headerIcons {
+    display: flex;
+}
+
+.searchbar {
+    align-items: center;
+    width: 300px;
+    height: 44px;
+    display: flex;
+    border: 2px solid #8b008b;
+    border-radius: 24px;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.searchbar img {
+    width: 36px;
+    height: 36px;
+    padding-left: 5px;
+    margin-left: 5px;
+    margin-right: 10px;
+    filter: invert(50%);
+}
+
+.inputSearch {
+    border: none;
+    height: 40px;
+    flex-grow: 1;
+    margin-right: 12px;
+    font-size: 20px;
+    width: 10%;
+    color: #808080;
+    background: transparent;
+}
+
+.inputSearch:focus-visible {
+    outline: none;
+}
+
+.searchbarEnd {
+    width: 48px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbarEnd img {
+    margin-right: 10px;
+}
+
+.d-none {
+    display: none;
+}
+
+.notesContainer {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.noteBox {
+    position: relative;
+    min-width: 200px;
+    max-width: 450px;
+    min-height: 100px;
+    border: 2px solid #8b008b;
+    box-shadow: 0px 5px 10px 2px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: #f5deb3;
+    overflow-wrap: break-word;
+}
+
+.noteTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.noteText {
+    padding-block-end: 20px;
+}
+
+.noteActions {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+}
+
+.noteActionsSub {
+    display: flex;
+    justify-content: space-between;
+}
+
+.noteActionsSub p {
+    color: #808080;
+    margin: 0;
+}
+
+.noteActionsSub i {
+    font-size: 20px !important;
+    cursor: pointer;
+}
+
+.newNoteWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.newNote {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    left: 0;
+    right: 0;
+    width: 400px;
+    max-width: 90%;
+    height: 280px;
+    border: 2px solid #8b008b;
+    box-shadow: 0px 5px 10px 2px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: #f5deb3;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#newNoteTitle {
+    font-size: 20px;
+    box-shadow: 0px 5px 10px 2px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#newNoteText {
+    font-size: 18px;
+    box-shadow: 0px 5px 10px 2px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#newNoteSafeBtn {
+    width: 80px;
+    color: #f5deb3;
+    background-color: #8b008b;
+    box-shadow: 0px 5px 10px 2px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+@media(max-width: 500px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .searchbar{
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 300px) {
+    .searchbar{
+        width: 200px !important;
+    } 
+}

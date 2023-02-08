@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Notes</title>
+    <link rel="shortcut icon" href="img/notebookx64.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body onload="render()">
+    <div class="header">
+        <div class="searchbar">
+            <img src="img/icon_search.svg" alt="Lupe">
+            <input onfocus="visible('cancelSearch')" onkeypress="clickPress(event)" class="inputSearch" id="inputSearch" placeholder="Search something..." type="text">
+            <div class="searchbarEnd">
+                <img onclick="clearSearch()" id="cancelSearch" class="d-none" src="img/cancel_FILL0_wght400_GRAD0_opsz48.png" alt="cancel">
+            </div>
+        </div>
+        <div class="headerIcons">
+            <i onclick="displayDeleted()" id="displayDeletedIcon" class="material-symbols-outlined headerIcon">delete</i>
+            <i onclick="displayFavorite()" id="displayFavoriteIcon" class="material-symbols-outlined headerIcon">favorite</i>
+            <i onclick="openNote()" id="displayFavoriteIcon" class="material-symbols-outlined headerIcon">add_circle</i>
+        </div>
+    </div>
+    <div class="notesContainer" id="notesContainer">
+    </div>
+</body>
+</html>
